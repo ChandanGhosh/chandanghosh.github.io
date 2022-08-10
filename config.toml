@@ -1,3 +1,56 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://chandanghosh.github.io/"
+enableEmoji = true
+languageCode = "en-gb"
+theme = "anatole"
+
+[params]
+author = "Chandan Ghosh"
+contentratio = 0.75
+copyright = "Chandan Ghosh, 2019-{{ YEAR }}"
+description = "Exciting journey to the 0's and 1's"
+doNotLoadAnimations = false
+favicon = "favicons/"
+images = ["images/profile_pic.jpeg"]
+indexDateFormat = "2006-01-02"
+mainSections = ["blog"]
+profilePicture = "images/profile_pic.jpeg"
+readMore = true
+singleDateFormat = "2006-01-02"
+title = "Chandan Ghosh"
+
+## Social links
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/chandanghosh"
+
+[[params.socialIcons]]
+icon = "fab fa-twitter"
+title = "Twitter"
+url = "https://twitter.com/ckghosh1983"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:chandanghoshbrv@gmail.com"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "LinkedIn"
+url = "https://www.linkedin.com/in/chandanghosh1983/"
+
+## Menu items
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 1
+  url = "/"
+
+  [[menu.main]]
+  name = "Blog"
+  weight = 2
+  identifier = "blog"
+  url = "/blog/"
